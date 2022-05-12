@@ -1,0 +1,219 @@
+version: "3.0"
+
+intents:
+  - greet
+  - goodbye
+  - done
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - credits
+  - installment
+  - fees
+  - pre_requisites
+  - graduation
+  - core
+  - specialization
+  - Machine_Learning
+  - System_Software_Architecture
+  - Network_Systems
+  - Embedded_Systems
+  - Cyber_security
+  - international
+  - visa
+  - permission
+  - summer
+  - weather
+  - city
+  - population
+  - state
+  - accept
+  - Feedback
+#   - FirstName
+#   - LastName
+  - SID
+
+entities:
+#   - firstN
+#   - lastN
+  - feedback
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you? How may I assist you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Amazing!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+  utter_done:
+  - text: "I am glad to be of your help. If you are satisfied by my service today, would you mind taking a survey to help me further improve?"
+
+  utter_accept:
+  - text: "On a scale of 0 to 10 with 0 being the lowest and 10 being the highest, how would you rate my service today?"
+
+  utter_credits:
+  - text: "You are required to complete 33 units + set of pre requisites (if you have any)"
+
+  utter_installment:
+  - text: "Yes, you are allowed to pay fees in installments. Please contact Bursar's office at https://www.sjsu.edu/bursar/ for any further information."
+
+  utter_fees:
+  - text: "Bursar's office is your point of contact for any fees related issues. Please feel free to contact them at https://www.sjsu.edu/bursar/"
+
+  utter_pre_requisites:
+  - text: "Based on your application, you may get following set of pre-requisites:
+          (1) Pass CMPE 180D - Microprosessor Design
+          (2) Pass CMPE 180A - Data Structures/Algo using C++
+          (3) Pass CMPE 180C - Operating Systems"
+
+  utter_graduation:
+  - text: "For advancement to graduate candidacy, following conditions should be met:
+          (1) Pre requisites should be completed
+          (2) GWAR should be completed
+          (3) Minimum GPA of 3.0 should be maintained
+          (4) Core courses should be completed"
+
+  utter_core:
+  - text: "To be eligible for a MS CMPE degree, you need to complete following mandatory core courses:
+          (1) CMPE 200 - Computer Architecture
+          (2) CMPE 220 - System Software
+          (3) CMPE 240 - Advance Computer Design"
+
+  utter_specialization:
+  - text: "MS CMPE program offers below areas of specialization:
+          (1) System Software Architecture
+          (2) Network System
+          (3) Embedded Systems
+          (4) Cyber Security
+          (5) Machine Learning Engineering"
+
+  utter_Machine_Learning:
+  - text: "To specialize in Machine Learning, you need to complete three courses from the following:
+          (1) CMPE 252 - Artificial Intelligence & Data Engg 
+          (2) CMPE 255 - Data Mining
+          (3) CMPE 256 - Advance Data Mining
+          (4) CMPE 257 - Machine Learning
+          (5) CMPE 258 - Deep Learning
+          (6) CMPE 260 - Reinforcement Learning"
+
+  utter_System_Software_Architecture:
+  - text: "To specialize in System Software Architecture, you need to complete three courses from the following:
+          (1) CMPE 213 - Parallel Computing
+          (2) CMPE 214 - GPU Architecture and Programming
+          (3) CMPE 249 - Intelligent Autonomous Systems
+          (4) CMPE 281 - Cloud Technologies
+          (5) CMPE 283 - Virtualization Technologies"
+
+  utter_Network_Systems:
+  - text: "To specialize in Network Systems, you need to complete three courses from the following:
+          (1) CMPE 206 - Computer Network Design
+          (2) CMPE 207 - Network Programming and Application
+          (3) CMPE 208 - Network Architecture and Protocols
+          (4) CMPE 209 - Network Security and Applications
+          (5) CMPE 210 - Software-defined Networks and Network Functions Virtualization"
+
+  utter_Embedded_Systems:
+  - text: "To specialize in Embedded Systems, you need to complete three courses from the following:
+          (1) CMPE 242 - Embedded Hardware Design
+          (2) CMPE 243 - Embedded Systems Applications
+          (3) CMPE 244 - Embedded Software
+          (4) CMPE 245 - Embedded Wireless Architecture
+          (5) CMPE 265 - High Speed Digital System Design"
+
+  utter_Cyber_security:
+  - text: "To specialize in Cyber Security, you need to complete three courses from the following:
+          (1) CMPE 209 - Network Security and Applications
+          (2) CMPE 211 - Advanced Network Security in IoT
+          (3) CMPE 219 - HCI for Cyber Security
+          (4) CMPE 279 - Software Security Technologies
+          (5) CMPE 287 - Software Quality Assurance and Testing"
+
+  utter_international:
+  - text: "No fewer than three courses for International students, except in final semester while taking culminating experiences classes or apply for Reduced Course Load. The department, however, recommends taking no more than four courses."
+
+  utter_visa:
+  - text: "Please contact ISSS for any visa or immigration related queries at https://www.sjsu.edu/isss/"
+
+  utter_permission:
+  - text: "Each course is solely handled by each instructor (not chair or grad advisor). Please contact instructors for permission numbers."
+
+  utter_summer:
+  - text: "Summer information can be found at https://www.sjsu.edu/summer/. Please note that seats in the summer session are limited and not guaranteed."
+
+  utter_city:
+  - text: "Which city do you want to check the weather for?"
+
+  utter_state:
+  - text: "Which state do you want to check the population for?"
+
+  utter_temp:
+  - text: "Today's temperature is {temp} degree Celcius."
+
+  utter_popu:
+  - text: "The population is {temp}."
+
+#   utter_FirstName:
+#   - text: "Please enter your First Name: "
+
+#   utter_LastName:
+#   - text: "Please enter your Last Name: "
+
+  utter_SID:
+  - text: "Please enter your Student ID: "
+
+  utter_Feedback:
+  - text: "Thank you, I appreciate your valuable feedback!"
+
+  utter_FeedbackScore:
+  - text: "Your feedback was {val}"
+  
+slots:
+#  firstN:
+#   type: text
+#   mappings:
+#   - type: from_entity
+#     entity: firstN
+
+#  lastN:
+#   type: text
+#   mappings:
+#   - type: from_entity
+#     entity: lastN
+    
+ feedback:
+  type: text
+  mappings:
+  - type: from_entity
+    entity: feedback
+    
+forms:
+  form_info:
+    required_slots:
+#       - firstN
+#       - lastN
+      - feedback
+ 
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+
+actions:
+ - action_weather_api
+ - action_demograph_api
+ - action_Feedback
+ - action_accept
+ - action_store

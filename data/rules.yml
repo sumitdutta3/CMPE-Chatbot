@@ -1,0 +1,47 @@
+version: "3.0"
+
+rules:
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Say 'I am a bot' anytime the user challenges
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+- rule: tuition_fees
+  steps:
+  - intent: fees
+  - action: utter_fees
+
+- rule: grad
+  steps:
+  - intent: graduation
+  - action: utter_graduation
+
+- rule: preq
+  steps:
+  - intent: pre_requisites
+  - action: utter_pre_requisites
+
+- rule: cr_courses
+  steps:
+  - intent: core
+  - action: utter_core
+
+- rule: install_fees
+  steps:
+  - intent: installment
+  - action: utter_installment
+
+# - rule: final
+#   steps:
+#   - intent: Feedback
+#   - action: utter_Feedback
+  
+  
+
+ 

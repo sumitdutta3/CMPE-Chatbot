@@ -1,0 +1,301 @@
+version: "3.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: done
+  examples: |
+    - correct
+    - works
+    - thank you, that really helps
+    - that helps
+    - thanks for your help
+    - thanks for helping me
+    - thanks for the help
+    - thanks
+    - thank you
+
+- intent: accept
+  examples: |
+    - yes
+    - sure
+    - indeed
+    - of course
+    - yeah
+    - okay
+    - ok
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am good thanks
+    - I am great thanks
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+    
+- intent: credits
+  examples: |
+    - How many credits are required for MS CMPE?
+    - How many credits are needed for MS CMPE?
+    - credits required for MS CMPE?
+    - credits needed for MS CMPE?
+    - number of credits required for MS CMPE?
+    - no. of credits required for MS CMPE?
+
+- intent: installment
+  examples: |
+    - Can I pay my fees in installment?
+    - Am I allowed to pay fees in installment?
+    - paying fees in installment?
+
+- intent: fees
+  examples: |
+    - Who is my point of contact for fees related issues?
+    - Point of contact for fees related issues?
+    - Whom should I contact for fees related issues?
+    - Who shall I reach out for fees related issues?
+
+- intent: pre_requisites
+  examples: |
+    - Which are the pre requisites conditions I need to fullfill for MS CMPE?
+    - Which pre requisites conditions I need to meet for MS CMPE?
+    - What are the pre requisites conditions for MS CMPE?
+    - Pre requisites for MS CMPE?
+
+- intent: graduation
+  examples: |
+    - What conditions should be met for graduation?
+    - Conditions required for advancement to graduation candidacy?
+    - Which conditions should I fulfill to be able to apply for graduation?
+    - Which conditions are required to apply for graduation?
+
+- intent: core
+  examples: |
+    - What are the mandatory core courses for MS CMPE program?
+    - core courses for MS CMPE?
+    - Which core courses are needed to be complete for MS CMPE program?
+
+- intent: specialization
+  examples: |
+    - What are the areas of specialization that MS CMPE program allow?
+    - Area of specialization for MS CMPE
+    - How many areas of specialization does MS CMPE offer?
+    - Area of specialization offered by MS CMPE?
+
+- intent: Machine_Learning
+  examples: |
+    - I am interested in Machine Learning. Which courses do I need to complete to specialize in Machine Learning?
+    - courses required for Machine Learning specialization?
+
+- intent: System_Software_Architecture
+  examples: |
+    - I am interested in System Software Architecture. Which courses do I need to complete to specialize in System Software Architecture?
+    - courses required for System Software Architecture specialization?
+
+- intent: Network_Systems
+  examples: |
+    - I am interested in Network Systems. Which courses do I need to complete to specialize in Network Systems?
+    - courses required for Network Systems specialization?
+
+- intent: Embedded_Systems
+  examples: |
+    - I am interested in Embedded Systems. Which courses do I need to complete to specialize in Embedded Systems?
+    - courses required for Embedded Systems specialization?
+
+- intent: Cyber_security
+  examples: |
+    - I am interested in Cyber Security. Which courses do I need to complete to specialize in Cyber Security?
+    - courses required for Cyber Security specialization?
+
+- intent: international
+  examples: |
+    - I am an international student. How many subjects am I required to take?
+    - How many subjects should I take being an international student?
+    - Minimum no. of subjects I should take being an international student?
+    - Is there any limit on the number of courses I am allowed to take each semester being an international student?
+
+- intent: visa
+  examples: |
+    - I have some doubts related to my visa. Whom should I contact?
+    - Who is my point of contact for visa related queries.
+    - Whom should I approach for any issues related to visa?
+
+- intent: permission
+  examples: |
+    - I am waitlisted. Whom should I contact regarding permission number?
+    - I need permission number to confirm my enrollment in a subject.
+    - Point of contact for permission number? 
+    - Who is my point of contact to obtain permission numbers?
+
+- intent: summer
+  examples: |
+    - I want to enroll in the summer session. Where can I find information regarding summer session?
+    - List of courses available for summer session?
+    - Which subjects can I enroll in the Summer session?  
+
+- intent: weather
+  examples: |
+    - What's the weather?
+    - I want to know today's weather
+    - Can I know the weather?
+    - Tell me the weather forcast
+    - How's the weather today?
+
+- intent: city
+  examples: |
+    - San Jose
+    - San Francisco
+    - New York
+    - Chicago
+    - Atlanta
+    - Miami
+    - Seattle
+
+- intent: state
+  examples: |
+    - California
+    - Georgia
+    - New York
+    - Illinois
+    - Florida
+    - Washington
+    - Nevada
+    - Utah
+    - Arizona
+
+
+- intent: population
+  examples: |
+    - What's the population?
+    - I want to know population?
+    - Can I know the population?
+    - Tell me the population 
+
+# Database Connectivity
+
+- intent: FirstName
+  examples: |
+    - Sumit
+    - Shrikant
+    - Phoebe
+    - Ross
+    - Joey
+    - Rachel
+    - Chandler
+
+- intent: LastName
+  examples: |
+    - Dutta
+    - Tambe
+    - Buffay
+    - Geller
+    - Tribbiani
+    - Greene
+    - Bing
+
+- intent: SID
+  examples: |
+    - 015222493
+    - 015222494
+    - 015222495
+    - 015222496
+
+- intent: Feedback
+  examples: |
+    - 0
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+
+# - intent: request_details
+#   examples: |
+#     - I want to fill the feedback form
+#     - how to fill the feedback form
+#     - fill the feedback form
+#     - what is the procedure to provide feedback
+#     - how can I give feedback
+
+
+
+  
+    
+    

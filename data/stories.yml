@@ -1,0 +1,121 @@
+version: "3.0"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: done
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+- story: pre_req_storie
+  steps:
+  - intent: credits
+  - action: utter_credits
+  - intent: pre_requisites
+  - action: utter_pre_requisites
+
+- story: specialize_storie1
+  steps:
+  - intent: specialization
+  - action: utter_specialization
+  - intent: Machine_Learning
+  - action: utter_Machine_Learning
+
+- story: specialize_storie2
+  steps:
+  - intent: specialization
+  - action: utter_specialization
+  - intent: System_Software_Architecture
+  - action: utter_System_Software_Architecture
+
+- story: specialize_storie3
+  steps:
+  - intent: specialization
+  - action: utter_specialization
+  - intent: Network_Systems
+  - action: utter_Network_Systems
+
+- story: specialize_storie4
+  steps:
+  - intent: specialization
+  - action: utter_specialization
+  - intent: Embedded_Systems
+  - action: utter_Embedded_Systems
+
+- story: specialize_storie5
+  steps:
+  - intent: specialization
+  - action: utter_specialization
+  - intent: Cyber_security
+  - action: utter_Cyber_security
+
+- story: happy_weather
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: weather
+  - action: utter_city
+  - intent: city
+  - action: action_weather_api
+  
+- story: demograph
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: population
+  - action: utter_state
+  - intent: state
+  - action: action_demograph_api
+
+- story: check_database
+  steps:
+  - intent: done
+  - action: utter_done
+  - intent: accept
+  - action: utter_accept
+  - checkpoint: feedback_in_progress
+
+- story: random_check 
+  steps:
+  - checkpoint: feedback_in_progress
+  # - intent: FirstName
+  # - slot_was_set: 
+  #   - firstN : Sumit
+  # - action: action_LastName
+  #- action: utter_LastName
+  # - intent: LastName
+  # - slot_was_set: 
+  #   - lastN : Dutta
+  # - action: action_accept
+  # - action: utter_accept
+  - intent: Feedback
+  - slot_was_set: 
+    - feedback : 10
+  - action: action_Feedback
+  - action: action_store
+  
+ 
+  
+
